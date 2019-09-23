@@ -62,7 +62,7 @@ tray[0]=0.12 #Elegimos un K0, e.g. K0=0.12
 for l in range(0,99):
 	tray[l+1]=g_in(tray[l]) #La trayectoria es K_t+1=g(K_t)
 
-plt.figure()
+a=plt.figure()
 plt.subplot(311)
 plt.plot(K,V1)
 plt.title('Funcion Valor')
@@ -80,3 +80,4 @@ plt.plot(T,tray)
 plt.title('Trayectoria de Acumulacion de K')
 
 plt.show()
+a.savefig('vfi.png')
